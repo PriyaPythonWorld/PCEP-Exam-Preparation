@@ -1,0 +1,31 @@
+inputt = float(input())
+income = 85528.0
+if inputt < income:
+    tax = round(inputt * (18/100)) - 556.2
+elif inputt > income:
+    tax = round((inputt-income) * (32/100)) + 14839.2
+if tax< 0:
+    tax = 0.0
+
+print("Tax is: ",float(round(tax)))
+#-------------------------------------------------
+
+# chatgpt
+# Read the income input from the user
+income = float(input("Enter your income: "))
+
+# Define the income threshold
+threshold = 85528.0
+
+# Calculate the tax based on the conditions
+if income <= threshold:
+    tax = (income * 0.18) - 556.2
+else:
+    tax = 14839.2 + (income - threshold) * 0.32
+
+# If the calculated tax is less than zero, set it to zero
+if tax < 0:
+    tax = 0.0
+
+# Print the rounded tax amount
+print("The tax is:", round(tax), "thalers")
