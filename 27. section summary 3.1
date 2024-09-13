@@ -1,0 +1,62 @@
+print("SINGLE IF STATEMENT\n-------------------")
+x = 10
+if x == 10:
+    print("x is equal to 10")
+print()
+
+print("SERIES OF IF STATEMENTS\n-----------------------")
+x = 10
+if x > 5:
+    print("x is greater than 5")
+
+if x < 10:
+    print("x is less than 10")
+
+if x == 10:
+    print("x is equal to 10")
+print()
+
+print("EACH IF STATEMENT IS TESTED SEPERATELY\n--------------------------------------")
+print("AN IF-ELSE STATEMENT\n--------------------")
+x = 10
+if x < 10:
+    print("x is less than 10")
+else:
+    print("x is greater than or equal to 10")
+print()
+
+print("A SERIES OF IF STATEMENT FOLLOWED BY AN ELSE\n--------------------------------------------")
+x = 10
+if x > 5:
+    print("x is greater than 5")
+if x < 10:
+    print("x is less than 10")
+if x == 10:
+    print("x is equal to 10")
+print()
+
+print("THE IF-ELIF-ELSE STATEMENT\n--------------------------")
+x = 10
+if x == 10:
+    print("x == 10")
+if x > 15:
+    print("x > 15")
+elif x > 10:
+    print("x > 10")
+elif x > 5:
+    print("x > 5")
+else:
+    print("else will not be executed")
+print()
+
+print("NESTED CONDITIONAL STATEMENTS\n-----------------------------")
+x = 10
+if x > 5:
+    if x == 6:
+        print("nested: x == 6")
+    elif x == 10:
+        print("nested: x == 10")
+    else:
+        print("nested: else")
+else:
+    print("else")
