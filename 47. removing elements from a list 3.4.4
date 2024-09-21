@@ -1,0 +1,19 @@
+numbers = [10, 5, 7, 2, 1]
+print("Original list content: ", numbers)
+print()
+
+numbers[0] = 111
+print("Previous list content: ", numbers)
+print()
+
+numbers[1] = numbers[4]
+print("Previous list content: ", numbers)
+
+print("\nList's length: ", len(numbers))
+print()
+
+del numbers[1]
+print("New list length: ", len(numbers))
+print()
+
+print("nNew list content: ", numbers)
