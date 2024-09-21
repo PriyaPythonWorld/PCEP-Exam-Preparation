@@ -1,0 +1,28 @@
+hat_list = [1, 2, 3, 4, 5]
+user_input = int(input("Enter a num: "))
+hat_list[2] = user_input
+print("Hat list: ", hat_list)
+print()
+
+del hat_list[-1]
+print("New hat list: ",hat_list)
+print()
+
+print(len(hat_list))
+
+# ----------------------------------------------------
+# Chat gpt
+hat_list = [1, 2, 3, 4, 5]  # This is an existing list of numbers hidden in the hat.
+
+# Step 1: Replace the middle number with a user-entered integer
+new_number = int(input("Enter a number to replace the middle element: "))
+hat_list[2] = new_number  # Replace the middle element at index 2
+
+# Step 2: Remove the last element from the list
+hat_list.pop()
+
+# Step 3: Print the length of the list
+print("The length of the list is:", len(hat_list))
+
+# Print the updated list to check the changes
+print(hat_list)
