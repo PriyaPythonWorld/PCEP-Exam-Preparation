@@ -1,0 +1,23 @@
+mylist = []
+swapped = True
+num = int(input("How many elements do you want to sort: "))
+
+for i in range(num):
+    val = float(input("Enter a list element: "))
+    mylist.append(val)
+
+while swapped:
+    swapped = False
+    for i in range(len(mylist) - 1):  # Corrected: should be len(mylist) - 1
+        if mylist[i] > mylist[i + 1]:
+            swapped = True
+            mylist[i], mylist[i + 1] = mylist[i + 1], mylist[i]  # Fixed: correct tuple unpacking
+
+print("\nSorted: ")
+print(mylist)
+print()
+# -----------------------------------------------------------------------------------------------
+
+my_list = [8, 10, 6, 2, 4]
+my_list.sort()
+print(my_list)
