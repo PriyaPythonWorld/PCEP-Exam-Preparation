@@ -1,0 +1,54 @@
+vehicles_one = ['car', 'bicycle', 'motor']
+print(vehicles_one)
+vehicles_two = vehicles_one
+del vehicles_one[0]
+print(vehicles_two)
+print()
+
+# -----------------------------------------
+
+colors = ['red', 'green', 'orange']
+copy_whole_colors = colors[:]
+copy_part_colors = colors[0:2]
+print(copy_whole_colors)
+print(copy_part_colors)
+print()
+
+# ------------------------------------------
+
+sample_list = ["a", "b", "c", "d", "e"]
+new_list = sample_list[2:-1]
+print(new_list)
+print()
+
+# ------------------------------------------
+
+my_list = [1, 2, 3, 4, 5]
+slice_one = my_list[2:]
+slice_two = my_list[:2]
+slice_three = my_list[-2:]
+print(slice_one)
+print(slice_two)
+print(slice_three)
+print()
+
+# ----------------------------------------
+
+my_list = [1, 2, 3, 4, 5]
+del my_list[0:2]
+print(my_list)
+
+del my_list[:]
+print(my_list)
+print()
+
+# ----------------------------------------
+
+my_list = ["A", "B", 1, 2]
+print("A" in my_list)
+print("C" not in my_list)
+print(2 not in my_list)
+
+
+
+
