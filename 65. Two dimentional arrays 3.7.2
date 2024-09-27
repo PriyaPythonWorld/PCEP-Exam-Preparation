@@ -1,0 +1,26 @@
+# Assuming ROOK, KNIGHT, PAWN, and EMPTY are defined, otherwise define them like this:
+ROOK = "R"      # Example definition of ROOK
+KNIGHT = "N"    # Example definition of KNIGHT
+PAWN = "P"      # Example definition of PAWN
+EMPTY = "."     # Example definition of an empty square
+
+# Creating an 8x8 board filled with EMPTY using a for loop
+board = []
+for i in range(8):
+    row = [EMPTY for i in range(8)]  # Create a row of 8 EMPTY squares
+    board.append(row)  # Add row to the board
+
+# Alternatively, creating the 8x8 board using list comprehension
+board = [[EMPTY for i in range(8)] for j in range(8)]
+
+# Placing pieces on the board
+board[0][0] = ROOK     # Top-left corner
+board[0][7] = ROOK     # Top-right corner
+board[7][0] = ROOK     # Bottom-left corner
+board[7][7] = ROOK     # Bottom-right corner
+board[4][2] = KNIGHT   # Placing a KNIGHT at (4, 2)
+board[3][4] = PAWN     # Placing a PAWN at (3, 4)
+
+# Print the board for visualization
+for row in board:
+    print(row)
