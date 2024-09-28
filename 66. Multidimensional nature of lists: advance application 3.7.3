@@ -1,0 +1,44 @@
+temps = [[0.0 for h in range(24)] for d in range(31)]
+total = 0.0
+for day in temps:
+    total += day[11]  # Adding noon temperature (hour 11) of each day
+
+average = total / 31
+print("Average temperature at noon: ", average)
+
+
+# ---------------------------------------------------------
+
+temps = [[0.0 for h in range(24)] for d in range(31)]
+highest = -100.0  # Starting from a low value to ensure correct comparison
+for day in temps:
+    for temp in day:
+        if temp > highest:
+            highest = temp  # Updating highest temperature if a higher value is found
+
+print("The highest temperature was: ", highest)
+
+
+# ---------------------------------------------------------
+
+temps = [[0.0 for h in range(24)] for d in range(31)]  # Corrected list initialization
+hot_days = 0
+for day in temps:
+    if day[11] > 20.0:  # Check if noon temperature is above 20.0
+        hot_days += 1
+
+print(hot_days, "days were hot.")
+
+
+# ---------------------------------------------------------
+
+rooms = [[[False for r in range(20)] for f in range(15)] for t in range(3)]
+rooms[1][9][13] = True  # Room 13 on floor 9 of tower 1 is occupied
+rooms[0][4][1] = False  # Room 1 on floor 4 of tower 0 is vacant
+vacancy = 0
+
+for room_number in range(20):  # Check all rooms on the 15th floor of the 3rd tower
+    if not rooms[2][14][room_number]:  # If the room is vacant
+        vacancy += 1
+
+print("Number of vacant rooms on the 15th floor of the 3rd tower:", vacancy)
