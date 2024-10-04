@@ -1,0 +1,53 @@
+var = 1
+def mult_by_var(x):
+    return x * var
+print(mult_by_var(7))
+print()
+
+# -----------------------------------
+
+def mult(x):
+    var = 5
+    return x * var
+print(mult(7))
+print()
+
+# -----------------------------------
+
+def mult(x):
+    var = 7
+    return x * var
+var = 3
+print(mult(7))
+print()
+
+# -----------------------------------
+
+var = 2
+print(var)
+def return_var():
+    global var
+    var = 5
+    return var
+print(return_var())
+print(var)
+
+# ------------------------------------
+
+'''
+def adding(x):
+    var = 7
+    return x + var
+print(adding(4))
+print(var)
+print()
+
+
+Output
+------
+11
+Traceback (most recent call last):
+    print(var)
+          ^^^
+NameError: name 'var' is not defined. Did you mean: 'vars'?
+'''
